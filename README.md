@@ -6,21 +6,24 @@
 
 This project demonstrates an automated system for disbursing emergency funds to affected individuals across different blockchain networks upon verification of a natural disaster. Leveraging VIA Labs' cross-chain messaging and private oracle technology, the system provides transparent, and efficient aid distribution, bypassing traditional bureaucratic delays and geographical limitations.
 
-When a natural disaster occurs in a specific region, a decentralized network of validators (simulated in this project using an off-chain oracle node powered by VIA Labs' protocol) monitors official disaster reporting agencies through secure API calls. Upon confirmation of the event, the VIA Labs private oracle relays this information to a smart contract deployed on a designated "fund" blockchain.
+When a natural disaster occurs in a specific region,
 
-This smart contract, the `EmergencyFund`, then automatically triggers cross-chain token transfers (stablecoins in this example) to the pre-registered wallets of individuals located in the affected area. These recipients can be registered on various supported blockchain networks, and VIA Labs' cross-chain messaging ensures the funds are effectively and natively transferred to their preferred network, potentially a blockchain with lower transaction fees suitable for emergency aid.
+a decentralized network of validators (simulated in this project using an off-chain oracle node powered by VIA Labs' protocol) monitors official disaster reporting agencies through secure API calls.
 
-## Key Features
+Upon confirmation of the event, the VIA Labs private oracle relays this information to a smart contract deployed on a designated "fund" blockchain.
 
-- **Automated Disaster Verification:** Utilizes a VIA Labs private oracle to securely fetch and verify real-world disaster data from trusted sources.
-- **Cross-Chain Fund Disbursement:** Leverages VIA Labs' cross-chain messaging protocol to transfer funds to recipients on different blockchain networks without the need for wrapping or complex bridging mechanisms.
-- **Recipient Registration:** Allows affected individuals (or authorized organizations on their behalf) to register their wallet addresses on various supported blockchains to receive potential aid.
-- **Transparency:** All transactions, including fund deposits, disaster verifications, and disbursements, are recorded on the blockchain, providing a transparent and auditable record of aid distribution.
-- **Efficiency:** Automates the disbursement process, significantly reducing the time it takes for aid to reach those in need compared to traditional methods.
+This smart contract, the `EmergencyFund`
+
+automatically triggers cross-chain token transfers (stablecoins in this example)
+
+to the pre-registered wallets of individuals located in the affected area.
+
+These recipients can be registered on various supported blockchain networks, and VIA Labs' cross-chain messaging ensures the funds are effectively and natively transferred to their preferred network, potentially a blockchain with lower transaction fees suitable for emergency aid.
 
 ## VIA Labs Technology Integration
 
 This project heavily relies on the following VIA Labs technologies:
 
 - **Private Oracles:** A custom oracle feature is implemented using VIA Labs' messaging protocol to securely retrieve and verify disaster data from off-chain APIs without exposing sensitive information on-chain. The oracle node listens for requests from the `DisasterVerification` smart contract and sends back the verification status.
+
 - **Cross-Chain Messaging:** Once a disaster is verified, the `EmergencyFund` smart contract utilizes VIA Labs' cross-chain messaging capabilities to send native stablecoins to recipients registered on different blockchain networks. This ensures seamless and cost-effective fund transfers across the Web3 ecosystem.
