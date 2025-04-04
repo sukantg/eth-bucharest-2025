@@ -1,6 +1,6 @@
 # eth-bucharest-2025 (VIA Labs)
 
-# Automated Cross-Chain Emergency Fund Disbursement
+# Decentralized Emergency Aid Network (DEAN)
 
 ## Overview
 
