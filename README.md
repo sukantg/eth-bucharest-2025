@@ -97,7 +97,9 @@ cd frontend
 
 Install frontend dependencies:
 
+```bash
 npm install
+```
 
 Start the development server:
 
