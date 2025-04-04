@@ -61,6 +61,6 @@ This will start the off-chain oracle node, which listens for disaster verificati
 If you have a list of recipient addresses, you can register them using the following script:
 
 ```bash
-## recipients.json: A JSON file containing an array of recipient addresses. Example: ["0xRecipient1", "0xRecipient2", ...]
 node scripts/registerRecipients.js avalanche-testnet recipients.json
+## recipients.json: A JSON file containing an array of recipient addresses. Example: ["0xRecipient1", "0xRecipient2", ...]
 ```
