@@ -30,31 +30,14 @@ It uses PredictHQ’s Natural Disasters API to track disasters around the world:
 ```bash
 # Clone the repository
 git clone [git@github.com:sukantg/eth-bucharest-2025.git](git@github.com:sukantg/eth-bucharest-2025.git) && cd eth-bucharest-2025
+```
 
 # Install dependencies
+
 npm install
 
 # Create a .env file with your private keys
+
 cp .env.example .env
 
-Edit the .env file and add:Your private key for deploying contracts (PRIVATE_KEY)Your node private key for running the oracle node (NODE_PRIVATE_KEY)
-
-
-Step 2: Deploy Your Contractsnode scripts/deploy.js
-This script will:Compile the EmergencyFund.sol and DisasterVerification.sol contracts.
-
-Deploy the contracts to Avalanche Testnet.Configure the oracle for on-chain to off-chain communication.Save deployment information for the frontend.Step 3: Run the Oracle Nodenode oracle/index.js
-
-
-Step 4: Interact with the ApplicationRegister Recipients (Optional)node scripts/registerRecipients.js <network> <recipients_file_path>
-
-<network>: The name of the network (e.g., avalanche-testnet).<recipients_file_path>: The path to a JSON file containing an array of recipient addresses.Request Disaster Verificationnode scripts/request-verification.js <network> <disaster_type> <location>
-<network>: The name of the network (e.g., avalanche-testnet).<disaster_type>: The type of disaster (e.g., 'Hurricane', 'Flood').<location>: The location of the disaster (e.g., 'New York, NY').Step 5: Use the Frontend# Navigate to the frontend directory
-cd frontend
-
-# Install frontend dependencies
-npm install
-
-# Start the frontend development server
-npm run start
-```
+Edit the .env file and add your private keys
