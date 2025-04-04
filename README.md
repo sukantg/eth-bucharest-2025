@@ -55,3 +55,13 @@ node oracle/index.js avalanche-testnet
 ```
 
 This will start the off-chain oracle node, which listens for disaster verification requests from the DisasterVerification contract. The node uses the NODE_PRIVATE_KEY to sign messages.
+
+## Step 4: Register Recipients
+
+recipients.json: A JSON file containing an array of recipient addresses. Example: ["0xRecipient1", "0xRecipient2", ...]
+
+If you have a list of recipient addresses, you can register them using the following script:
+
+```bash
+node scripts/registerRecipients.js avalanche-testnet recipients.json
+```
