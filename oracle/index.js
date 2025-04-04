@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 import { Vladiator } from '@vialabs-io/node-core';
 import { networks } from '../network.config.js';
-import features from './features/index.js';  // Import the features array
+import features from './features/index.js';  
 
 // Load environment variables
 dotenv.config();
