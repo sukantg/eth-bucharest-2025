@@ -62,6 +62,27 @@ If you have a list of recipient addresses, you can register them using the follo
 
 ```bash
 node scripts/registerRecipients.js avalanche-testnet recipients.json
-## recipients.json: A JSON file containing an array of recipient addresses.
-## Example: ["0xRecipient1", "0xRecipient2", ...]
 ```
+
+recipients.json: A JSON file containing an array of recipient addresses.
+Example: ["0xRecipient1", "0xRecipient2", ...]
+
+## Step 5: Request Disaster Verification
+
+To simulate a disaster event and trigger the verification process, use the following script:
+
+```
+node scripts/request-verification.js avalanche-testnet <disaster_type> "<location>"
+```
+
+<disaster_type>: The type of disaster (e.g., "Hurricane", "Earthquake", "Flood").
+
+<location>: The location of the disaster (e.g., "Miami, FL", "Tokyo, Japan"). Enclose the location in quotes if it contains spaces.
+
+Example:
+
+```
+node scripts/request-verification.js avalanche-testnet Hurricane "Miami, FL"
+```
+
+This will submit a request to the DisasterVerification contract, and the oracle node will attempt to verify the event.
