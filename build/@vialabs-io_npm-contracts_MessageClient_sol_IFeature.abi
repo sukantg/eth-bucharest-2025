@@ -1,0 +1,1 @@
+[{"inputs":[{"internalType":"uint256","name":"_txId","type":"uint256"}],"name":"getPayload","outputs":[{"internalType":"bytes","name":"","type":"bytes"}],"stateMutability":"view","type":"function"}]
