@@ -21,3 +21,6 @@ This project heavily relies on the following VIA Labs technologies:
 - **Private Oracles:** A custom oracle feature is implemented using VIA Labs' messaging protocol to securely retrieve and verify disaster data from off-chain APIs without exposing sensitive information on-chain. The oracle node listens for requests from the `DisasterVerification` smart contract and sends back the verification status.
 
 - **Cross-Chain Messaging:** Once a disaster is verified, the `EmergencyFund` smart contract utilizes VIA Labs' cross-chain messaging capabilities to send native stablecoins to recipients registered on different blockchain networks. This ensures seamless and cost-effective fund transfers across the Web3 ecosystem.
+
+It uses PredictHQ’s Natural Disasters API to track disasters around the world:
+[https://www.predicthq.com/events/disasters](https://www.predicthq.com/events/disasters)
