@@ -23,7 +23,8 @@ This project heavily relies on the following VIA Labs technologies:
 - **Cross-Chain Messaging:** Once a disaster is verified, the `EmergencyFund` smart contract utilizes VIA Labs' cross-chain messaging capabilities to send native stablecoins to recipients registered on different blockchain networks. This ensures seamless and cost-effective fund transfers across the Web3 ecosystem.
 
 For a detailed business plan, please see:
-[DEAN Business Plan](https://docs.google.com/document/d/1rm8l5bPxkUoKx6HQg83n_xoJwKEXT5sDiqw05Mk7ncs/edit?usp=sharing){target="\_blank"}
+
+For a detailed business plan, please see: [DEAN Business Plan](https://docs.google.com/document/d/1rm8l5bPxkUoKx6HQg83n_xoJwKEXT5sDiqw05Mk7ncs/edit?usp=sharing){target="blank"}
 
 It uses PredictHQ’s Natural Disasters API to track disasters around the world:
 [https://www.predicthq.com/events/disasters](https://www.predicthq.com/events/disasters){target="\_blank"}
