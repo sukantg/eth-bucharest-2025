@@ -30,14 +30,10 @@ It uses PredictHQ’s Natural Disasters API to track disasters around the world:
 ```bash
 # Clone the repository
 git clone git@github.com:sukantg/eth-bucharest-2025.git && cd eth-bucharest-2025
-```
 
-### Install dependencies
-
+# Install dependencies
 npm install
 
-### Create a .env file with your private keys
-
+# Create a .env file with your private keys
 cp .env.example .env
-
-Edit the .env file and add your private keys
+```
