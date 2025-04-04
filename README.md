@@ -77,7 +77,7 @@ node scripts/request-verification.js avalanche-testnet <disaster_type> "<locatio
 
 <disaster_type>: The type of disaster (e.g., "Hurricane", "Earthquake", "Flood").
 
-<location>: The location of the disaster (e.g., "Miami, FL", "Tokyo, Japan"). Enclose the location in quotes if it contains spaces.
+<location> : The location of the disaster (e.g., "Miami, FL", "Tokyo, Japan"). Enclose the location in quotes if it contains spaces.
 
 Example:
 
