@@ -115,8 +115,8 @@ npm run start
 
 The frontend provides a user interface to:
 
-View the total funds in the EmergencyFund contract.
+- View the total funds in the EmergencyFund contract.
 
-Report a disaster (which triggers the oracle).
+- Report a disaster (which triggers the oracle).
 
-Check the verification status of a reported disaster.
+- Check the verification status of a reported disaster.
