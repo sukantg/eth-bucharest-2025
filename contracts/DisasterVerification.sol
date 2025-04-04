@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// (c)2025 Your Name/Organization
+// (c)2024 Atlas (atlas@vialabs.io)
 pragma solidity ^0.8.17;
 
 import "../node_modules/@vialabs-io/npm-contracts/MessageClient.sol";
@@ -122,8 +122,6 @@ contract DisasterVerification is MessageClient {
         bytes memory _featureResponse
     ) internal virtual override {
         // Decode the feature response to get the verification result
-        // The feature response MUST include requestId, verified (bool), location, and disasterType
-        // This MUST match what the oracle node encodes in featureReply
         (
             uint requestId,
             bool verified,
