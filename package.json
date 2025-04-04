@@ -1,0 +1,36 @@
+{
+  "name": "eth-bucharest-2025",
+  "version": "1.0.0",
+  "description": "Emergency fund distribution using VIA's messaging protocol",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "compile": "solcjs --bin --abi --include-path node_modules/ --base-path . -o ./build contracts/DisasterVerification.sol",
+    "deploy": "node scripts/deploy.js",
+    "deploy:avalanche": "node scripts/deploy.js avalanche-testnet",
+    "deploy:base": "node scripts/deploy.js base-testnet",
+    "request": "node scripts/request-weather.js",
+    "oracle": "node oracle/index.js",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "keywords": [
+    "ethereum",
+    "oracle",
+    "weather",
+    "via",
+    "ethers",
+    "off-chain"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "@vialabs-io/node-core": "github:VIALabs-io/node-core",
+    "@vialabs-io/npm-contracts": "github:VIALabs-io/npm-contracts",
+    "@vialabs-io/npm-registry": "github:VIALabs-io/npm-registry",
+    "axios": "^1.8.4",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0",
+    "solc": "0.8.17"
+  }
+}
