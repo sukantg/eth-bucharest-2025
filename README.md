@@ -72,12 +72,12 @@ Example: ["0xRecipient1", "0xRecipient2", ...]
 To simulate a disaster event and trigger the verification process, use the following script:
 
 ```
-node scripts/request-verification.js avalanche-testnet <disaster_type> "<location>"
+node scripts/request-verification.js avalanche-testnet <disaster_type> "<disaster_location>"
 ```
 
 <disaster_type>: The type of disaster (e.g., "Hurricane", "Earthquake", "Flood").
 
-<location> : The location of the disaster (e.g., "Miami, FL", "Tokyo, Japan"). Enclose the location in quotes if it contains spaces.
+<disaster_location> : The location of the disaster (e.g., "Miami, FL", "Tokyo, Japan"). Enclose the location in quotes if it contains spaces.
 
 Example:
 
