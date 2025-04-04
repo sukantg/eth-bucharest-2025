@@ -24,10 +24,10 @@ This project heavily relies on the following VIA Labs technologies:
 
 For a detailed business plan, please see:
 
-For a detailed business plan, please see: [DEAN Business Plan](https://docs.google.com/document/d/1rm8l5bPxkUoKx6HQg83n_xoJwKEXT5sDiqw05Mk7ncs/edit?usp=sharing){target="blank"}
+For a detailed business plan, please see: [DEAN Business Plan](https://docs.google.com/document/d/1rm8l5bPxkUoKx6HQg83n_xoJwKEXT5sDiqw05Mk7ncs/edit?usp=sharing)
 
 It uses PredictHQ’s Natural Disasters API to track disasters around the world:
-[https://www.predicthq.com/events/disasters](https://www.predicthq.com/events/disasters){target="\_blank"}
+[https://www.predicthq.com/events/disasters](https://www.predicthq.com/events/disasters)
 
 ## Step 1: Clone & Setup
 
