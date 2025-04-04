@@ -6,7 +6,7 @@ import axios from 'axios';
  */
 class DisasterOracle {
     // Feature identification properties
-    featureId = 1; // Feature ID for Disaster Oracle
+    featureId = 1; 
     featureName = 'DisasterOracle';
     featureDescription = 'Oracle for fetching disaster data from PredictHQ';
 

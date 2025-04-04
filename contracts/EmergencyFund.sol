@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// (c)2025 Your Name/Organization
+// (c)2024 Atlas (atlas@vialabs.io)
 pragma solidity ^0.8.17;
 
 import "@vialabs-io/npm-contracts/MessageClient.sol";
@@ -142,12 +142,6 @@ contract EmergencyFund is MessageClient {
         );
         require(!fundsReceived[msg.sender], "Funds already received.");
         require(fundsAvailable > 0, "No funds available.");
-        //  Implement a check to see if the user is in the reported disaster location.
-        //  This would likely involve comparing the user's location (which you would
-        //  need to obtain, perhaps in a separate function or as part of the initial
-        //  disaster report) with the disaster location.
-        //  For simplicity, this example assumes that if a disaster is reported,
-        //  all users in the contract are eligible.  YOU MUST CHANGE THIS.
         uint amount = fundsAvailable; // For now, give all available funds.  Change as needed.
         fundsAvailable = 0; // all funds are distributed
         fundsReceived[msg.sender] = true;
