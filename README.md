@@ -86,3 +86,29 @@ node scripts/request-verification.js avalanche-testnet Hurricane "Miami, FL"
 ```
 
 This will submit a request to the DisasterVerification contract, and the oracle node will attempt to verify the event.
+
+## Step 6: Frontend Setup and Usage
+
+Navigate to the frontend directory:
+
+```bash
+cd frontend
+```
+
+Install frontend dependencies:
+
+npm install
+
+Start the development server:
+
+```bash
+npm run start
+```
+
+The frontend provides a user interface to:
+
+View the total funds in the EmergencyFund contract.
+
+Report a disaster (which triggers the oracle).
+
+Check the verification status of a reported disaster.
