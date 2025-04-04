@@ -62,5 +62,6 @@ If you have a list of recipient addresses, you can register them using the follo
 
 ```bash
 node scripts/registerRecipients.js avalanche-testnet recipients.json
-## recipients.json: A JSON file containing an array of recipient addresses. Example: ["0xRecipient1", "0xRecipient2", ...]
+## recipients.json: A JSON file containing an array of recipient addresses.
+## Example: ["0xRecipient1", "0xRecipient2", ...]
 ```
