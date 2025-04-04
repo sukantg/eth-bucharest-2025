@@ -37,3 +37,21 @@ npm install
 # Create a .env file with your private keys
 cp .env.example .env
 ```
+
+## Step 2: Deploy Smart Contracts
+
+```bash
+# Deploy the smart contracts
+node scripts/deploy.js avalanche-testnet
+```
+
+This script will deploy the EmergencyFund and DisasterVerification contracts to the Avalanche Testnet. Ensure you have sufficient AVAX tokens in the account associated with your PRIVATE_KEY.
+
+## Step 3: Run the Oracle Node
+
+```bash
+# Start the oracle node
+node oracle/index.js avalanche-testnet
+```
+
+This will start the off-chain oracle node, which listens for disaster verification requests from the DisasterVerification contract. The node uses the NODE_PRIVATE_KEY to sign messages.
